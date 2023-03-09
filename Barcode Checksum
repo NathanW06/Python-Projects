@@ -1,0 +1,31 @@
+#Barcode Checksum Challenge
+userBarcode = [0, 0, 0, 0, 0, 0, 0, 0]
+for index in range(0,8,1):
+    userBarcode[index] = int(input("Enter the next digit of the barcode: "))
+    print(userBarcode)
+print("Your barcode is: ", userBarcode)
+#0 is the starting index, 8 is the ending index, 1 is how much it increments by
+
+for index in range(0,8,1):
+    digit1 = userBarcode[0]
+    digit2 = userBarcode[1]
+    digit3 = userBarcode[2]
+    digit4 = userBarcode[3]
+    digit5 = userBarcode[4]
+    digit6 = userBarcode[5]
+    digit7 = userBarcode[6]
+    digit8 = userBarcode[7]
+
+newDigit1 = digit1 * 10
+newDigit2 = digit2 * 9
+newDigit3 = digit3 * 8
+newDigit4 = digit4 * 7
+newDigit5 = digit5 * 6
+newDigit6 = digit6 * 5
+newDigit7 = digit7 * 4
+newDigit8 = digit8 * 3
+
+sumOfDigits = newDigit1 + newDigit2 + newDigit3 + newDigit4 + newDigit5 + newDigit6 + newDigit7 + newDigit8
+moddedSum = sumOfDigits % 11
+checkSum = 11 - moddedSum
+print("The checksum value is: ", checkSum)
