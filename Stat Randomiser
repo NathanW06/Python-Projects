@@ -1,0 +1,96 @@
+#Imports a randomiser to allow random number generation
+import random
+
+#Generates a random number between 1 and 10, inclusive
+#to create a name
+prefix = random.randint(1,10)
+suffix = random.randint(1,10)
+
+if prefix == 1:
+    prefix = "Stewart"
+elif prefix == 2:
+    prefix = "John"
+elif prefix == 3:
+    prefix = "Liz"
+elif prefix == 4:
+    prefix = "Poppy"
+elif prefix == 5:
+    prefix = "Master"
+elif prefix == 6:
+    prefix = "Darth"
+elif prefix == 7:
+    prefix = "Boris"
+elif prefix == 8:
+    prefix = "Emily"
+elif prefix == 9:
+    prefix = "Doctor"
+else:
+    prefix = "Sir"
+
+if suffix == 1:
+    suffix = "Johnson"
+elif suffix == 2:
+    suffix = "Smith"
+elif suffix == 3:
+    suffix = "III"
+elif suffix == 4:
+    suffix = "Skywalker"
+elif suffix == 5:
+    suffix = "Montague-Patel"
+elif suffix == 6:
+    suffix = "Wright"
+elif suffix == 7:
+    suffix = "Elan"
+elif suffix == 8:
+    suffix = "Truss"
+elif suffix == 9:
+    suffix = "#385216"
+else:
+    suffix = "Banana"
+
+#Outputs name to the user
+print("Your name is",prefix,suffix)
+
+#Generates a random number to determine a weapon
+weapon = random.randint(1,7)
+if weapon == 1:
+    weapon = "sword"
+elif weapon == 2:
+    weapon = "medic gunner"
+elif weapon == 3:
+    weapon = "knuckles"
+elif weapon == 4:
+    weapon = "monado"
+elif weapon == 5:
+    weapon = "staff"
+elif weapon == 6:
+    weapon = "whip"
+else:
+    weapon = "banana"
+
+#Generates a random number to determine a gender
+gender = random.randint(1,2)
+if gender == 1:
+    gender = "male"
+else:
+    gender = "female"
+
+#Generates a random number to determine strength, agility, defence, ether and an ability
+strength = random.randint(1,10)
+ether = random.randint(1,10)
+agility = random.randint(1,10)
+defense = random.randint(1,10)
+ability = random.randint(1,5)
+if ability == 1:
+    ability = "'Yoink!' - Has a chance to steal an item or even exp from an enemy"
+elif ability == 2:
+    ability = "'Double Or Nothing' - Doubles agility while no armour is equipped"
+elif ability == 3:
+    ability = "'Reyn Time' - Chance to insta-kill enemies while your health is below 20%"
+elif ability == 4:
+    ability = "'Play Dead' - Reduced aggro while party gauge is full"
+else:
+    ability = "'Heart of the Cards' - While health is at 5% or lower, chance to draw all 5 pieces of Exodia and end the encounter"
+
+#Outputs all stats to the user
+print("Your weapon is the", weapon, ", your gender is", gender, ", your strength is", (strength + 55),", your agility is", (agility + 55), ", your ether is", (ether + 55), ", your defense is", (defense + 55), ", and your ability is", ability,".")
