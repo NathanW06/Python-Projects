@@ -1,0 +1,12 @@
+#Obj2 Circle Properties
+
+diameter = int(input("Please enter the diameter of the circle: "))
+radius = diameter / 2
+area = 3.14 * radius * radius
+circumference = 3.14 * diameter
+print("The radius of this circle is ", radius)
+print("The area of this circle is ", area)
+print("The circumference of this circle is ", circumference)
+arcAngle = int(input("Please enter the arc angle: "))
+arcLength = circumference * arcAngle / 360
+print("The arc length of this circle is ", arcLength)
